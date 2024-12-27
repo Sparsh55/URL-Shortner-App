@@ -1,5 +1,5 @@
 
-import {  Routes, Route, useNavigate } from 'react-router-dom';
+import {  Routes, Route } from 'react-router-dom';
 import LandingPage from './components/LandingPage';
 import Dashboard from './components/Dashboard';
 import Footer from './components/Footer';

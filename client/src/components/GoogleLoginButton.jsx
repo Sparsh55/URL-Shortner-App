@@ -1,6 +1,5 @@
 
 import './GoogleLogin.css';
-import axios from 'axios';
 
 const GoogleLoginButton = () => {
 
