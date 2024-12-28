@@ -186,3 +186,7 @@
 {"level":"info","message":"Incoming request: GET /api/auth/google","timestamp":"2024-12-28T08:04:15.847Z"}
 {"level":"info","message":"Incoming request: GET /api/auth/google","timestamp":"2024-12-28T08:06:51.489Z"}
 {"level":"info","message":"Incoming request: GET /api/auth/google/callback?code=4%2F0AanRRrt8_BfpsYHVwqcDKSGEwClYQdfDouQ9wYztB7hwq78uPV8jj1guteweXPYqSY6g0w&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&authuser=0&prompt=none","timestamp":"2024-12-28T08:06:59.589Z"}
+{"level":"info","message":"Incoming request: GET /api/auth/google","timestamp":"2024-12-28T08:14:13.567Z"}
+{"level":"info","message":"Incoming request: GET /api/auth/google/callback?code=4%2F0AanRRrvIEc6ZzYY22K6S01_jEfxLUenW8MLxVzHDDqzKm2scmpfiw7KA81lHCzy3hPKbzA&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none","timestamp":"2024-12-28T08:14:20.399Z"}
+{"level":"info","message":"Incoming request: GET /api/auth/google","timestamp":"2024-12-28T08:16:32.094Z"}
+{"level":"info","message":"Incoming request: GET /api/auth/google/callback?code=4%2F0AanRRrs7JusH8vZAD_mdwj_TmbpeqIJ1LwkAqkst0EC6byWFSq1NEBLebjXa4HLpjLvDiA&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none","timestamp":"2024-12-28T08:16:37.620Z"}
