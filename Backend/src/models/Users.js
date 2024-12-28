@@ -12,6 +12,25 @@ const userSchema = new mongoose.Schema({
   },
 });
 
+// Documentation for User schema
+/**
+ * @swagger
+ * components:
+ *   schemas:
+ *     User:
+ *       type: object
+ *       required:
+ *         - email
+ *         - name
+ *       properties:
+ *         email:
+ *           type: string
+ *           description: User's email
+ *         name:
+ *           type: string
+ *           description: User's name
+ */
+
 userSchema.methods.generateAuthToken = function () {
   const token = jwt.sign({ userId: this._id }, process.env.JWT_SECRET, {
     expiresIn: '30m',

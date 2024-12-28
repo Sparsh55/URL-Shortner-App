@@ -1,5 +1,34 @@
 import mongoose from 'mongoose';
 
+// URL Schema
+/**
+ * @swagger
+ * components:
+ *   schemas:
+ *     Url:
+ *       type: object
+ *       required:
+ *         - longUrl
+ *         - shortUrl
+ *         - alias
+ *       properties:
+ *         longUrl:
+ *           type: string
+ *           description: The original long URL.
+ *         shortUrl:
+ *           type: string
+ *           description: The shortened URL.
+ *         alias:
+ *           type: string
+ *           description: The alias for the shortened URL.
+ *         topic:
+ *           type: string
+ *           description: The topic or category associated with the shortened URL.
+ *         analytics:
+ *           type: object
+ *           description: Analytics data (e.g., number of views).
+ */
+
 const urlSchema = new mongoose.Schema({
   longUrl: {
     type: String,
@@ -12,31 +41,22 @@ const urlSchema = new mongoose.Schema({
   alias: {
     type: String,
     required: true,
+    unique: true,
   },
-  topic: String,
+  topic: {
+    type: String,
+    required: false,
+  },
+  analytics: {
+    type: Object,
+    default: {},
+  },
   createdAt: {
     type: Date,
     default: Date.now,
   },
-  analytics: {
-    totalClicks: { type: Number, default: 0 },
-    uniqueClicks: { type: Number, default: 0 },
-    clicksByDate: [{
-      date: Date,
-      count: Number,
-    }],
-    osType: [{
-      osName: String,
-      uniqueClicks: Number,
-      uniqueUsers: Number,
-    }],
-    deviceType: [{
-      deviceName: String,
-      uniqueClicks: Number,
-      uniqueUsers: Number,
-    }],
-  },
 });
 
-const URL = mongoose.model('URL', urlSchema);
-export default URL;
+const Url = mongoose.model('Url', urlSchema);
+
+export default Url;

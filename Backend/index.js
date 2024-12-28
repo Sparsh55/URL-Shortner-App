@@ -16,9 +16,15 @@ export const app = exrpess();
 
 moongose.set("strictQuery", false);
 
-
 //cors policy
-app.use(cors());
+const corsOptions = {
+  origin: "*",
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  allowedHeaders: ["Content-Type", "Authorization"],
+};
+
+app.use(cors(corsOptions));
+app.options("*", cors(corsOptions));
 app.use(bodyParser.json());
 app.use(cookieParser());
 
@@ -37,6 +43,11 @@ app.use("/api/shorten", limitter);
 // Middleware for logging requests
 app.use((req, res, next) => {
   logger.info(`Incoming request: ${req.method} ${req.url}`);
+  res.header("Access-Control-Allow-Origin", "http://localhost:5600");
+  res.header(
+    "Access-Control-Allow-Headers",
+    "Origin, X-Requested-With, Content-Type, Accept"
+  );
   next();
 });
 
@@ -46,9 +57,7 @@ app.use("/api/url", URLrouter);
 
 // Default route
 app.get("/", (req, res) => {
-  res.send(
-    "<a href= 'http://localhost:5600/api/auth/google'>googleLogin</a>"
-  );
+  res.send("<a href= 'http://localhost:5600/api/auth/google'>googleLogin</a>");
 });
 
 // Error handling middleware

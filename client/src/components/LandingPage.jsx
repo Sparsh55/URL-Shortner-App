@@ -2,10 +2,10 @@ import  { useEffect } from 'react';
 import Typewriter from 'typewriter-effect';
 import { useNavigate } from 'react-router-dom';
 import './LandingPage.css';
-import GoogleLoginButton from './GoogleLoginButton';
+// import GoogleLoginButton from './GoogleLoginButton';
 
 
-const LandingPage = ({setCookie}) => {
+const LandingPage = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -52,7 +52,7 @@ const LandingPage = ({setCookie}) => {
         >
           About This App!
         </button>
-        {/* <GoogleLoginButton setCookie={setCookie}/> */}
+        {/* <GoogleLoginButton /> */}
       </div>
     </div>
   );
