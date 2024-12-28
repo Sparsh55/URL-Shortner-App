@@ -17,27 +17,8 @@ export const app = exrpess();
 moongose.set("strictQuery", false);
 
 //cors policy
-const allowedOrigins = [
-  "http://localhost:5173",
-  "http://localhost:5600",
-  "https://url-shortner-app-rbyi.onrender.com",
-  "https://delightful-caramel-2610ae.netlify.app",
-];
-app.use(
-  cors({
-    origin: function (origin, callback) {
-      // Allow requests with no origin (like mobile apps or curl requests)
-      if (!origin) return callback(null, true);
-      if (allowedOrigins.indexOf(origin) === -1) {
-        const msg =
-          "The CORS policy for this site does not " +
-          "allow access from the specified origin.";
-        return callback(new Error(msg), false);
-      }
-      return callback(null, true);
-    },
-  })
-);
+app.use(cors({ origin: 'https://deluxe-gaufre-58482e.netlify.app' }));
+app.options('/api/url', cors());
 
 app.use(bodyParser.json());
 app.use(cookieParser());
