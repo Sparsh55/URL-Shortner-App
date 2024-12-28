@@ -2,7 +2,7 @@ import  { useEffect } from 'react';
 import Typewriter from 'typewriter-effect';
 import { useNavigate } from 'react-router-dom';
 import './LandingPage.css';
-// import GoogleLoginButton from './GoogleLoginButton';
+import GoogleLoginButton from './GoogleLoginButton';
 
 
 const LandingPage = () => {
@@ -52,7 +52,7 @@ const LandingPage = () => {
         >
           About This App!
         </button>
-        {/* <GoogleLoginButton /> */}
+        <GoogleLoginButton />
       </div>
     </div>
   );

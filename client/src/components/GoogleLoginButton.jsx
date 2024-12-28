@@ -1,19 +1,19 @@
 import "./GoogleLogin.css";
 
 const GoogleLoginButton = () => {
-  function setCookie(name, value, days = 0) {
-    let expires = "";
-    if (days) {
-      const date = new Date();
-      date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
-      expires = `; expires=${date.toUTCString()}`;
-    }
-    const stringValue =
-      typeof value === "object" ? JSON.stringify(value) : value;
-    document.cookie = `${encodeURIComponent(name)}=${encodeURIComponent(
-      stringValue
-    )}${expires}; path=/`;
-  }
+  // function setCookie(name, value, days = 0) {
+  //   let expires = "";
+  //   if (days) {
+  //     const date = new Date();
+  //     date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
+  //     expires = `; expires=${date.toUTCString()}`;
+  //   }
+  //   const stringValue =
+  //     typeof value === "object" ? JSON.stringify(value) : value;
+  //   document.cookie = `${encodeURIComponent(name)}=${encodeURIComponent(
+  //     stringValue
+  //   )}${expires}; path=/`;
+  // }
   const handleGoogleLogin = () => {
     // Open Google Login in a new window
     const googleLoginWindow = window.open(
@@ -42,7 +42,7 @@ const GoogleLoginButton = () => {
     window.addEventListener("message", (event) => {
       // Ensure the message is from the expected source
       if (event.origin === "https://url-shortner-app-rbyi.onrender.com") {
-        setCookie("userUrl", event.data, 4);
+        // setCookie("userUrl", event.data, 4);
         // setUser(event.data); // Update user data
         googleLoginWindow.close(); // Close the popup window (as a fallback)
       }
@@ -50,16 +50,8 @@ const GoogleLoginButton = () => {
   };
 
   return (
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        height: "100vh",
-        backgroundColor: "#f4f6f8",
-      }}
-    >
-      {" "}
+    <div>
+      
       <button
         onClick={handleGoogleLogin}
         style={{

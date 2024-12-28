@@ -8,8 +8,6 @@ import AboutThisApp from './components/AboutThisApp';
 import { useEffect, useState } from 'react';
 import MobileMsg from './components/MobileMsg';
 import Loader from './components/Loader';
-import ProtectedRoute from './components/ProtectedRoute';
-
 const App = () => {
 
     const [isMobile, setIsMobile] = useState(false);
@@ -52,7 +50,7 @@ const App = () => {
       <>
       <Routes>
         <Route path="/" element={<LandingPage />}/>
-        <Route path="/dashboard" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
+        <Route path="/dashboard" element={<Dashboard />}/>
         <Route path="/about" element={<AboutMe />} />
         <Route path="/aboutthisapp" element={<AboutThisApp/>} />
       </Routes>
