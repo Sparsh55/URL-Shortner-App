@@ -17,8 +17,15 @@ export const app = exrpess();
 moongose.set("strictQuery", false);
 
 //cors policy
-app.use(cors({ origin: 'https://deluxe-gaufre-58482e.netlify.app' }));
-app.options('/api/url', cors());
+app.use(cors({ 
+  origin: 'http://localhost:5173', // Replace with your frontend origin 
+  methods: 'GET,POST,PUT,DELETE,OPTIONS', 
+  allowedHeaders: ['Content-Type', 'Authorization'], 
+  exposedHeaders: ['Authorization'], 
+  credentials: true }));;
+
+app.options('*', cors(corsOptions)); // Handle preflight requests
+
 
 app.use(bodyParser.json());
 app.use(cookieParser());
