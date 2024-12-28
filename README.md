@@ -15,7 +15,7 @@ ________________________________________
 ## Hosted Link:-
 backend api are hosted at https://url-shortner-app-rbyi.onrender.com
 
-and frontend hosted at https://deluxe-gaufre-58482e.netlify.app/
+and frontend hosted at https://spiffy-bublanina-abcbf4.netlify.app/
 
 Frontend should be available at http://localhost:5173. on your local machine 
 Backend API should be available at http://localhost:5600. on your local machine
@@ -182,6 +182,8 @@ npm install
    
 cd client
 npm install
+for fixting react auth error run 
+npm install --legacy-peer-deps
 
 5.	Set up environment variables:
 Create a .env file in the  Backend root directory and add the following variables:
