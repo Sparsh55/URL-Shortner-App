@@ -17,7 +17,7 @@ const GoogleLoginButton = () => {
   const handleGoogleLogin = () => {
     // Open Google Login in a new window
     const googleLoginWindow = window.open(
-      "http://localhost:5600/api/auth/google", // Backend endpoint
+      "https://url-shortner-app-rbyi.onrender.com/api/auth/google", // Backend endpoint
       "_blank",
       "width=500,height=600"
     );
@@ -41,7 +41,7 @@ const GoogleLoginButton = () => {
     // }, 1000)
     window.addEventListener("message", (event) => {
       // Ensure the message is from the expected source
-      if (event.origin === "http://localhost:5600") {
+      if (event.origin === "https://url-shortner-app-rbyi.onrender.com") {
         setCookie("userUrl", event.data, 4);
         // setUser(event.data); // Update user data
         googleLoginWindow.close(); // Close the popup window (as a fallback)

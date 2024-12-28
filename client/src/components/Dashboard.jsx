@@ -21,7 +21,7 @@ export default function Dashboard() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:5600/api/url/", {
+      const response = await axios.post("https://url-shortner-app-rbyi.onrender.com/api/url/", {
         longUrl,
       });
      console.log(response);

@@ -183,3 +183,6 @@
 {"level":"info","message":"Incoming request: GET /api/url/analytics/111","timestamp":"2024-12-28T06:42:14.582Z"}
 {"level":"info","message":"Incoming request: GET /api/auth/google","timestamp":"2024-12-28T06:42:59.173Z"}
 {"level":"info","message":"Incoming request: GET /api/url/analytics/111","timestamp":"2024-12-28T06:44:36.288Z"}
+{"level":"info","message":"Incoming request: GET /api/auth/google","timestamp":"2024-12-28T08:04:15.847Z"}
+{"level":"info","message":"Incoming request: GET /api/auth/google","timestamp":"2024-12-28T08:06:51.489Z"}
+{"level":"info","message":"Incoming request: GET /api/auth/google/callback?code=4%2F0AanRRrt8_BfpsYHVwqcDKSGEwClYQdfDouQ9wYztB7hwq78uPV8jj1guteweXPYqSY6g0w&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&authuser=0&prompt=none","timestamp":"2024-12-28T08:06:59.589Z"}
