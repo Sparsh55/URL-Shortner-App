@@ -20,7 +20,7 @@ const swaggerDocsMiddleware = (app) => {
       },
       servers: [
         {
-          url: 'http://localhost:5600', // Base URL for API
+          url: 'https://url-shortner-app-rbyi.onrender.com', // Base URL for API
         },
       ],
     },

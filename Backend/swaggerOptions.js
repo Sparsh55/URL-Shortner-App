@@ -8,7 +8,7 @@ const swaggerOptions = {
         contact: {
           name: 'Sparsh',
           email: 'sparshsaxena9654@gmail.com',
-          url: 'http://localhost:5600',
+          url: 'https://url-shortner-app-rbyi.onrender.com',
         },
       },
     },
