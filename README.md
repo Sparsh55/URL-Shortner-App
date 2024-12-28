@@ -24,7 +24,7 @@ Backend API should be available at http://localhost:5600. on your local machine
 there is no issue with the code , when testing with swagger docs the GET request has been blocked by browser offical policy even though we have configered CORS in backend
 so when you use live hosted link the dashboard api will throw an error
 
-recommended to use postman for testing and localy install and run the project, repelace hosted api with http://localhost:5600 in only frontend when fetching data in local machine 
+recommended to use postman for testing and localy install and run the project, replace hosted api with http://localhost:5600 in only frontend when fetching data in local machine 
 
 due to google oath 2024 standerds there is a cors error in frontend which can be fixed by google team only 
 
@@ -170,19 +170,19 @@ Steps to Run the Application Locally
 1.	Clone the repository:
 
 Copy code
-git clone https://github.com/Sparsh55/URL-Shortner-App.git
+git clone https://github.com/Sparsh55/URL-Shortner-App.git, 
 cd URL-SHORTNER
 
 2.	Install backend dependencies: In the backend directory:
 
-cd Backend
+cd Backend, 
 npm install
 
 3.	Install frontend dependencies: In the frontend directory:
    
-cd client
-npm install
-for fixting react auth error run 
+cd client, 
+npm install, 
+for fixting react auth error run , 
 npm install --legacy-peer-deps
 
 5.	Set up environment variables:
@@ -205,8 +205,8 @@ npm start
 npm start
 
 10.	Access the application:
-o	Frontend should be available at http://localhost:5173.
-o	Backend API should be available at http://localhost:5600.
+Frontend should be available at http://localhost:5173. 
+Backend API should be available at http://localhost:5600.
 ________________________________________
 Testing the Endpoints
 You can test the API using tools like Postman or curl.
