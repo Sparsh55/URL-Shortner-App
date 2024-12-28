@@ -17,7 +17,7 @@ export const app = exrpess();
 moongose.set("strictQuery", false);
 
 //cors policy
-const corsOptions = { origin: ['http://localhost:5173', 'http://localhost:5600','https://deluxe-gaufre-58482e.netlify.app','https://url-shortner-app-rbyi.onrender.com'], // Replace with your frontend origins 
+const corsOptions = { origin: ['http://localhost:5173', 'http://localhost:5600','https://spiffy-bublanina-abcbf4.netlify.app/','https://url-shortner-app-rbyi.onrender.com'], // Replace with your frontend origins 
                      methods: 'GET,POST,PUT,DELETE,OPTIONS', allowedHeaders: ['Content-Type', 'Authorization'], 
                      exposedHeaders: ['Authorization'], 
                      credentials: true };
