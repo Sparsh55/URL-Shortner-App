@@ -22,9 +22,9 @@ Backend API should be available at http://localhost:5600. on your local machine
 
 ## IMPORTENT NOTE:-
 there is no issue with the code , when testing with swagger docs the GET request has been blocked by browser offical policy even though we have configered CORS in backend
-so when you use live hosted link the dashboard api will throw an error
+so when you use live hosted link the dashboard api will throw an error.
 
-recommended to use postman for testing and localy install and run the project, replace hosted api with http://localhost:5600 in only frontend when fetching data in local machine 
+recommended to use postman for testing and localy install and run the project, replace hosted api with http://localhost:5600/api/url in only frontend when fetching data in local machine 
 
 due to google oath 2024 standerds there is a cors error in frontend which can be fixed by google team only 
 
