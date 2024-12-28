@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "test": "mocha \"test/**/*.js\"",
-    "start": "nodemon index.js"
+    "start": "nodemon index.js",
+    "build":"node index.js"
   },
   "author": "Sparsh Saxena",
   "license": "ISC",
